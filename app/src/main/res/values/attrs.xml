@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomTextInputLayout">
+        <attr name="tileColor" format="color"/>
+        <attr name="titleText" format="string"/>
+        <attr name="labelText" format="string"/>
+        <attr name="hintText" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="PasswordInputLayout">
+        <attr name="passwordHint" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="CustomDatePicker">
+        <attr name="DatePickerHint" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="SortCodeInputField">
+        <attr name="SortCodeHint" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="MiInput">
+        <attr name="firstInput" format="string"/>
+        <attr name="secondInput" format="string"/>
+        <attr name="thirdInput" format="string"/>
+    </declare-styleable>
+
+</resources>

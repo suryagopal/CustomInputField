@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:orientation="vertical"
+    tools:context=".customtextInput.Sample">
+
+    <com.example.edittextviewz.customtextInput.CustomTextInput
+        style="@style/TextLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="default state" />
+    </com.example.edittextviewz.customtextInput.CustomTextInput>
+
+    <com.example.edittextviewz.customtextInput.CustomTextInput
+        android:id="@+id/focusInputLabel"
+        style="@style/TextLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="focused hint text"
+            android:text="Focused state" />
+    </com.example.edittextviewz.customtextInput.CustomTextInput>
+
+    <com.example.edittextviewz.customtextInput.CustomTextInput
+        android:id="@+id/errorInputText"
+        style="@style/TextLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="error hint text"
+            android:text="Error state" />
+    </com.example.edittextviewz.customtextInput.CustomTextInput>
+
+    <com.example.edittextviewz.customtextInput.CustomTextInput
+        style="@style/TextLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:enabled="false">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="disable state" />
+    </com.example.edittextviewz.customtextInput.CustomTextInput>
+
+    <com.example.edittextviewz.customtextInput.CustomTextInput
+        style="@style/TextLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:prefixText="Label: ">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Label hint"
+            android:text="Label text" />
+    </com.example.edittextviewz.customtextInput.CustomTextInput>
+
+</LinearLayout>

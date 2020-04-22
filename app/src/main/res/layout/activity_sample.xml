@@ -10,7 +10,7 @@
     tools:context=".customtextInput.Sample">
 
     <com.example.edittextviewz.customtextInput.CustomTextInput
-        style="@style/TextLabel"
+        style="@style/TextLabelStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp">
@@ -23,7 +23,7 @@
 
     <com.example.edittextviewz.customtextInput.CustomTextInput
         android:id="@+id/focusInputLabel"
-        style="@style/TextLabel"
+        style="@style/TextLabelStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp">
@@ -37,7 +37,7 @@
 
     <com.example.edittextviewz.customtextInput.CustomTextInput
         android:id="@+id/errorInputText"
-        style="@style/TextLabel"
+        style="@style/TextLabelStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp">
@@ -50,7 +50,7 @@
     </com.example.edittextviewz.customtextInput.CustomTextInput>
 
     <com.example.edittextviewz.customtextInput.CustomTextInput
-        style="@style/TextLabel"
+        style="@style/TextLabelStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -63,7 +63,7 @@
     </com.example.edittextviewz.customtextInput.CustomTextInput>
 
     <com.example.edittextviewz.customtextInput.CustomTextInput
-        style="@style/TextLabel"
+        style="@style/TextLabelStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -74,6 +74,35 @@
             android:layout_height="wrap_content"
             android:hint="Label hint"
             android:text="Label text" />
+    </com.example.edittextviewz.customtextInput.CustomTextInput>
+
+    <com.example.edittextviewz.customtextInput.CustomTextInput
+        style="@style/passwordLabelStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Label hint"
+            android:text="Label text"
+            android:inputType="textPassword"/>
+    </com.example.edittextviewz.customtextInput.CustomTextInput>
+
+    <com.example.edittextviewz.customtextInput.CustomTextInput
+        android:id="@+id/passwordCustomLabel"
+        style="@style/passwordCustomLabelStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Label hint"
+            android:text="Label text"
+            android:inputType="textPassword"/>
     </com.example.edittextviewz.customtextInput.CustomTextInput>
 
 </LinearLayout>

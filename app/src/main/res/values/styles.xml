@@ -5,18 +5,29 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="TextLabel" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+    <style name="TextLabelStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <item name="boxCornerRadiusBottomEnd">0dp</item>
         <item name="boxCornerRadiusTopEnd">0dp</item>
         <item name="boxCornerRadiusBottomStart">0dp</item>
         <item name="boxCornerRadiusTopStart">0dp</item>
         <item name="boxStrokeWidth">1dp</item>
         <item name="endIconTint">@color/stromGrey</item>
-        <item name="endIconDrawable">@drawable/ic_cancel_black</item>
         <item name="errorIconDrawable">@null</item>
         <item name="endIconCheckable">true</item>
         <item name="endIconMode">clear_text</item>
         <item name="errorEnabled">false</item>
         <item name="hintEnabled">false</item>
+    </style>
+
+    <style name="passwordLabelStyle" parent="TextLabelStyle">
+        <item name="errorIconDrawable">@null</item>
+        <item name="endIconCheckable">true</item>
+        <item name="endIconMode">password_toggle</item>
+        <item name="errorEnabled">false</item>
+        <item name="hintEnabled">false</item>
+    </style>
+
+    <style name="passwordCustomLabelStyle" parent="passwordLabelStyle">
+        <item name="endIconMode">none</item>
     </style>
 </resources>

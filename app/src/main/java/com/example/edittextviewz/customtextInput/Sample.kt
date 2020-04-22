@@ -12,5 +12,6 @@ class Sample : AppCompatActivity() {
 
         errorInputText.error = "Error banner"
         focusInputLabel.requestFocus()
+        passwordCustomLabel.setPassword()
     }
 }

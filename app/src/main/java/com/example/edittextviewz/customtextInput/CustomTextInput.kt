@@ -13,6 +13,7 @@ class CustomTextInput @JvmOverloads constructor(
     attrs: AttributeSet? = null,
     defStyleAttr: Int = R.attr.textInputLayoutStyle
 ) : TextInputLayout(context, attrs, defStyleAttr) {
+
     private var isPasswordShown: Boolean = false
 
     private val inputLayout: TextInputLayout = this
@@ -39,4 +40,45 @@ class CustomTextInput @JvmOverloads constructor(
             }
         }
     }
+
+    fun setError(error:String){
+        inputLayout.error = error
+    }
+    open var isError: Boolean = false
+        set(value) {
+            if (value != field) {
+                field = value
+                if(isError) {
+                    isSuccess = false
+                }
+                refreshState()
+            }
+        }
+    open var isSuccess: Boolean = false
+        set(value) {
+            if (value != field) {
+                field = value
+                if(isSuccess) {
+                    isError = false
+                }
+                refreshState()
+            }
+        }
+
+    private fun refreshState() {
+        when {
+            isSuccess -> {
+                inputLayout.endIconMode = END_ICON_CUSTOM
+                inputLayout.endIconDrawable = context.getDrawable(R.drawable.tick)
+            }
+            isError -> {
+                inputLayout.error = "error"
+            }
+            else -> {
+                inputLayout.isErrorEnabled = false
+                inputLayout.endIconMode = END_ICON_CLEAR_TEXT
+            }
+        }
+    }
+
 }

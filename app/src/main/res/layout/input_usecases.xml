@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        tools:context="com.scurab.android.app.MainActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="IF with left Label only + hint" />
+
+        <com.example.edittextviewz.customtextInput.CustomTextInput
+            android:id="@+id/case1"
+            style="@style/TextLabelStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:prefixText="Label "
+            android:hint="This is a hint">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </com.example.edittextviewz.customtextInput.CustomTextInput>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="IF with right Clear button only" />
+
+        <com.example.edittextviewz.customtextInput.CustomTextInput
+            android:id="@+id/case2"
+            style="@style/defaultTextLabelStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:text="Hello World!" />
+        </com.example.edittextviewz.customtextInput.CustomTextInput>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="IF with right password button only show/hide" />
+
+        <com.example.edittextviewz.customtextInput.CustomTextInput
+            android:id="@+id/case3"
+            style="@style/passwordCustomLabelStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:text="Hello World!" />
+
+        </com.example.edittextviewz.customtextInput.CustomTextInput>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="IF with right password button only drawable1/drawable2" />
+
+        <com.example.edittextviewz.customtextInput.CustomTextInput
+            android:id="@+id/case4"
+            style="@style/passwordLabelStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:text="Hello World!" />
+        </com.example.edittextviewz.customtextInput.CustomTextInput>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="IF with left Label + Clear button Clear" />
+
+        <com.example.edittextviewz.customtextInput.CustomTextInput
+            android:id="@+id/case5"
+            style="@style/TextLabelStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:prefixText="Label: ">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:text="Hello World!" />
+
+        </com.example.edittextviewz.customtextInput.CustomTextInput>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="IF with left Label + Clear button drawable" />
+
+        <com.example.edittextviewz.customtextInput.CustomTextInput
+            android:id="@+id/case6"
+            style="@style/defaultTextLabelStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:prefixText="Label: ">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:text="Hello World!" />
+
+        </com.example.edittextviewz.customtextInput.CustomTextInput>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="disabled IF with text + Clear button" />
+
+        <com.example.edittextviewz.customtextInput.CustomTextInput
+            android:id="@+id/case7"
+            style="@style/defaultTextLabelStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:inputType="text"
+                android:text="Hello World!" />
+
+        </com.example.edittextviewz.customtextInput.CustomTextInput>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="disabled IF with no text with left Label + Clear button" />
+
+        <com.example.edittextviewz.customtextInput.CustomTextInput
+            android:id="@+id/case8"
+            style="@style/defaultTextLabelStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:prefixText="Label: "
+            android:enabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:inputType="text"
+                android:text="Hello World!" />
+
+        </com.example.edittextviewz.customtextInput.CustomTextInput>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="IF with left Label + password button" />
+
+        <com.example.edittextviewz.customtextInput.CustomTextInput
+            android:id="@+id/case9"
+            style="@style/passwordLabelStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:prefixText="Pwd: ">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:text="Hello World!" />
+        </com.example.edittextviewz.customtextInput.CustomTextInput>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="disabled IF with left Label + password button" />
+
+        <com.example.edittextviewz.customtextInput.CustomTextInput
+            android:id="@+id/case10"
+            style="@style/passwordLabelStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            app:prefixText="Pwd: ">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:inputType="textPassword"
+                android:text="Hello World!" />
+        </com.example.edittextviewz.customtextInput.CustomTextInput>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="IF with left Label + Clear button (drawable), error state let's say if text.length &lt; 5" />
+
+        <com.example.edittextviewz.customtextInput.CustomTextInput
+            android:id="@+id/case11"
+            style="@style/defaultTextLabelStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="123" />
+
+        </com.example.edittextviewz.customtextInput.CustomTextInput>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="IF with Password button Show/Hide, error state let's say if contains only digits" />
+
+        <com.example.edittextviewz.customtextInput.CustomTextInput
+            android:id="@+id/case12"
+            style="@style/passwordLabelStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:text="Hello World!" />
+
+        </com.example.edittextviewz.customtextInput.CustomTextInput>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="If with a button changing the cases of letters" />
+
+        <com.example.edittextviewz.customtextInput.CustomTextInput
+            android:id="@+id/case13"
+            style="@style/customEndIconStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:text="this use case not possible, as we will not have control on endicon button" />
+        </com.example.edittextviewz.customtextInput.CustomTextInput>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="0 Error &lt;= 3 Default &lt;= 6 Success " />
+
+        <com.example.edittextviewz.customtextInput.CustomTextInput
+            android:id="@+id/case14"
+            style="@style/defaultTextLabelStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:text="0 Error &lt;= 3 Default &lt;= 6 Success " />
+        </com.example.edittextviewz.customtextInput.CustomTextInput>
+
+    </LinearLayout>
+</ScrollView>

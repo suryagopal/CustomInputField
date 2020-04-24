@@ -28,27 +28,30 @@ class CustomTextInput @JvmOverloads constructor(
                     inputLayout.suffixText = "Hide"
                     isPasswordShown = false
 
-                    inputLayout.editText!!.transformationMethod = HideReturnsTransformationMethod.getInstance()
+                    inputLayout.editText!!.transformationMethod =
+                        HideReturnsTransformationMethod.getInstance()
 
                 }
                 false -> {
                     inputLayout.suffixText = "Show"
                     isPasswordShown = true
 
-                    inputLayout.editText!!.transformationMethod = PasswordTransformationMethod.getInstance()
+                    inputLayout.editText!!.transformationMethod =
+                        PasswordTransformationMethod.getInstance()
                 }
             }
         }
     }
 
-    fun setError(error:String){
+    fun setError(error: String) {
         inputLayout.error = error
     }
+
     open var isError: Boolean = false
         set(value) {
             if (value != field) {
                 field = value
-                if(isError) {
+                if (isError) {
                     isSuccess = false
                 }
                 refreshState()
@@ -58,7 +61,7 @@ class CustomTextInput @JvmOverloads constructor(
         set(value) {
             if (value != field) {
                 field = value
-                if(isSuccess) {
+                if (isSuccess) {
                     isError = false
                 }
                 refreshState()
